@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* common css */
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/result_.jpg) no-repeat center / cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+}
+
+.wrapper::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(202, 202, 202, 0.233);
+    /* z-index: 1; */
+}
+
+.wrapper .box {
+    width: 95vh;
+    height: 55vh;
+    background: rgba(88, 88, 88, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap;
+    /* z-index: 3; */
+}
+
+.wrapper .box span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 3vh;
+    width: 55vh;
+    height: 10vh;
+    box-sizing: border-box;
+    padding: 1.5vh;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    border-radius: 2vh 0 0 2vh;
+    text-align: center;
+}
+
+.wrapper .box input {
+    width: 55vh;
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.432);
+    /* box-sizing: border-box; */
+    /* display: inline; */
+    border: 0;
+    border-radius: 2vh 0 0 2vh;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    z-index: 1;
+    transition: all linear 0.4s;
+}
+
+
+/* .wrapper .box button:visited {
+    background: rgb(255, 255, 255);
+} */
+
+.wrapper .box button {
+    width: 15vh;
+    height: 10vh;
+    box-sizing: border-box;
+    display: inline;
+    border: 0;
+    border-radius: 0 2vh 2vh 0;
+    background: rgba(255, 255, 255, 0.719);
+    color: rgba(32, 32, 32, 0.87);
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    z-index: 1;
+    transition: all linear 0.4s;
+}
+
+.wrapper .box button:hover {
+    background: rgba(0, 0, 0, 0.315);
+    color: #fff;
+}
